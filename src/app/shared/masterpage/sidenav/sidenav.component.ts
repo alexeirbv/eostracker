@@ -50,8 +50,15 @@ export class SidenavComponent implements OnInit {
       {
         icon: 'account_balance_wallet',
         external: true,
-        link: environment.walletUrl,
+        link: 'https://guarda.co/app',
         name: this.translate.instant('Wallet')
+      },
+      {
+        icon: 'compare_arrows',
+        external: true,
+        link: 'https://changenow.io/?from=btc&to=EOS&utm_source=eosblocks&utm_medium=link&utm_campaign=change_EOS',
+        name: 'Exchanges'
+
       },
       {
         icon: 'how_to_vote',
@@ -59,6 +66,7 @@ export class SidenavComponent implements OnInit {
         link: environment.votingUrl,
         name: this.translate.instant('Voting')
       }
+      
     ];
   }
 
