@@ -3,8 +3,15 @@
   <mat-sidenav #sidenav [mode]="sidenavMode$ | async" [opened]="sidenavOpen$ | async" autoFocus="false" fixedInViewport="true"
     fixedTopGap="50" class="mat-elevation-z4">
     <app-sidenav></app-sidenav>
+        <div style="margin-left: 10px; margin-top: 5px;">
+          <a id="banner_img_link" href="https://click.brprft.com/click?pid=20&amp;offer_id=22&amp;sub2=callistoexplorer.com">
+            <img id="banner_rotate" onload="getRandomBundle();" style="display: block;" src="/assets/banners/tr04.gif">
+          </a>
+          <img id="pixel_link" src="https://wraprevenue.imp2aff.com/imp?aid=20&amp;oid=22&amp;sub1=callistoexplorer.com" height="1" width="1">
+        </div>
   </mat-sidenav>
-  <mat-sidenav-content fxLayout="column">
+  <mat-sidenav-content fxLayout="column" style="margin-left:340px;">
     <router-outlet></router-outlet>
   </mat-sidenav-content>
+
 </mat-sidenav-container>
