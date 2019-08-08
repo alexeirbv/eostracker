@@ -59,14 +59,7 @@ export class SidenavComponent implements OnInit {
         link: 'https://changenow.io/?from=btc&to=EOS&utm_source=eosblocks&utm_medium=link&utm_campaign=change_EOS',
         name: 'Exchanges'
 
-      },
-      {
-        icon: 'how_to_vote',
-        external: true,
-        link: environment.votingUrl,
-        name: this.translate.instant('Voting')
       }
-      
     ];
   }
 
